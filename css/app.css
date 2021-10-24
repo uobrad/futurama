@@ -54,13 +54,10 @@ nav ul li a {
 }
 
 @media (max-width: 476px) { 
-    nav ul {
-        margin-right: 3px;
-    }
-
     nav ul li a {
         margin-right: 5px;
     }
 }
+
 
 
