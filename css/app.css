@@ -3,6 +3,58 @@
     padding: 0;
 }
 
+:root {
+    --lightSilver:#334756;
+    --darkSilver:#2C394B;
+    --dark:#082032;
+    --orange:#FF4C29;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--orange);
+}
+
+/* navigation */
+
+nav {
+    display: flex;
+    height: 100px;
+    background-color: var(--dark);
+    color: var(--orange);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    margin-right: 55px;
+    text-decoration: none;
+    color: var(--orange);
+}
+
+@media (max-width: 576px) { 
+    nav ul li a {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 595px) { 
+    nav ul li a {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 476px) { 
+    nav ul li a {
+        margin-right: 5px;
+    }
 }
