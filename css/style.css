@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* utility classes */
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+:root {
+    --lightSilver:#334756;
+    --darkSilver:#2C394B;
+    --dark:#082032;
+    --orange:#FF4C29;
+}
+
+body {
+    font-family: 'Open Sans',serif;
+    font-size: 20px;
+    color: var(--orange);
+    overflow-x: hidden;
+}
+
+/* Banner */
+
+#banner {
+    background-image: url("../images/pocetna.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 28em;
+    text-align: center;
+    position: relative;
+}
+
+    #banner header {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #212121;
+        background: rgba(27, 27, 27, 0.75);
+        color: #fff;
+        padding: 1.5em 0;
+    }
+
+        #banner header h2 {
+            display: inline-block;
+            margin: 0;
+            font-size: 1.25em;
+            vertical-align: middle;
+        }
+
+            #banner header h2 em {
+                opacity: 0.75;
+            }
+
+            #banner header h2 a {
+                border-bottom-color: rgba(255, 255, 255, 0.5);
+            }
+
+                #banner header h2 a:hover {
+                    border-bottom-color: transparent;
+                }
+
+        #banner header .button {
+            vertical-align: middle;
+            margin-left: 1em;
+        }
+
+
+
+        /* promo */
+
+        #promo-wrapper {
+            position: relative;
+            background-color: #FF4C29;
+            background-size: 192px 192px, cover;
+            background-position: top left, center center;
+            color: #fff;
+            text-align: center;
+            padding: 6em 0 6em 0;
+        }
+
+        #promo {
+            background: rgba(255, 255, 255, 0.05);
+            border: solid 1px rgba(255, 255, 255, 0.25);
+            border-radius: 0.5em;
+            padding: 1.75em 2.5em 1.75em 2.5em;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+
+        #promo .button {
+			background: #fff;
+			border-color: rgba(255, 255, 255, 0);
+			color: #27636B;
+			font-size: 1.25em;
+            font-family:sans-serif;
+            border-radius: 00.5em;
+		}
+
+        #promo a {
+            text-decoration: none;
+        }
+
+
+        
+/* author */
+.wrapper {
+    background-color: #27636B;
+    box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    padding: 8em 0 8em 0;
+    text-align: center;
+}
+
+    .wrapper.style1 {
+        background-image: none;
+        background-color: #2C394B;
+    }
+
+    .row img {
+        margin-top: 10px;
+    }
+
+
+/* navigation */
+
+nav {
+    display: flex;
+    background-color: var(--dark);
+    color: var(--orange);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    margin-right: 55px;
+    text-decoration: none;
+    color: var(--orange);
+}
+
+@media (max-width: 576px) { 
+    nav ul li a {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 595px) { 
+    nav ul li a {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 476px) { 
+    nav ul li a {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        flex-direction: column;
+        padding: 2rem;
+        
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-top: 1rem;
+    }
+}
+/* footer */
+
+footer {
+    background-color: var(--dark);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer h1 {
+    text-align: center;
+}
+
+footer #social-networks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer #social-networks li {
+    margin-right: 15px;
+}
+
+footer #footer-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer #footer-menu li {
+    margin-right: 15px;
+}
+
+footer #footer-menu li a {
+    text-decoration: none;
+    color: var(--orange);
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer #footer-menu ul li {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .cards img {
+    margin: 10px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    max-width: 23vw;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+
+/* Form */
+
+#contact {
+    width: 1000px;
+    margin: 2rem auto;
+    height: 80vh;
+    padding: 2rem;
+}
+
+@media (max-width: 1000px) {
+    #contact{
+        width: 100%;
+    }
+}
+
+#contact h1 {
+    margin-bottom: 1rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form input {
+    margin-bottom: 1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    border: 1px var(--darkSilver) solid;
+    border-radius: 5px;
+    color: var(--darkSilver);
+}
+
+#contact form textarea {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+#contact form button {
+    border: none;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: var(--orange);
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  
+    width: 100%;
+    height: 100%;
+  
+    border-radius: 4px;
+    background-color: hsl(0, 0%, 96%);
+  }
+ 
